@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Ejercicios 7.13</title>
+
+    <style>
+        table{
+            text-align: center;
+        }
+    </style>
+
+    <script>
+        var empleado1,empleado2,empleado3,empleado4;
+        var venta1,venta2,venta3,venta4;
+        var sueldo1,sueldo2,sueldo3, sueldo4;
+
+        empleado1=window.prompt("Ingresa el codigo de empleado");
+        venta1=window.prompt("Ingresa el total de venta bruta semanal");
+        empleado2=window.prompt("Ingresa el codigo de empleado");
+        venta2=window.prompt("Ingresa el total de venta bruta semanal");
+        empleado3=window.prompt("Ingresa el codigo de empleado");
+        venta3=window.prompt("Ingresa el total de venta bruta semanal");
+        empleado4=window.prompt("Ingresa el codigo de empleado");
+        venta4=window.prompt("Ingresa el total de venta bruta semanal");
+
+        venta1=parseFloat(venta1);
+        venta2=parseFloat(venta2);
+        venta3=parseFloat(venta3);
+        venta4=parseFloat(venta4);
+
+        sueldo1=200+(venta1*0.09);
+        sueldo2=200+(venta2*0.09);
+        sueldo3=200+(venta3*0.09);
+        sueldo4=200+(venta4*0.09);
+
+        document.write("<table border=1> <tr> <th>Empleado</th> <th>Suedo</th> </tr> <tr> <td>"+empleado1+"</td> <td>"+sueldo1+"</td> </tr> <tr> <td>"+empleado2+"</td> <td>"+sueldo2+
+        "</td> </tr> <tr> <td>"+empleado3+"</td> <td>"+sueldo2+"</td> </tr> <tr> <td>"+empleado4+"</td> <td>"+sueldo4+"</td> </tr> </table>");
+
+    </script>
+</head><body>
+    <a href="/Menu 6al9.html">Inicio</a>
+    <h4>Seseña Baez Brayan Elihu</h4>
+    <h4>197O00636</h4>
+    <hr>
+</body>
+</html>

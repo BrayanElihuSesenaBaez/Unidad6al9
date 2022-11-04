@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<HTML>
+
+<head>
+    <TITLE>Ejercicios 6.20</TITLE>
+    <meta charset="utf-8">
+</head>
+
+<BODY>
+
+    <a href="/Menu 6al9.html">Inicio</a>
+    <h4>Seseña Baez Brayan Elihu</h4>
+    <h4>197O00636</h4>
+    <hr>
+
+<script>
+var num=[];
+//Pedir 6 números por pantalla y meterlos en una array
+for(var i = 0;i <= 4;i++){
+    num[i]=prompt("Ingresa un el numero"+[i]);
+}
+
+//Ordenarlo y mostrarlo
+document.write("<br>");
+document.write("Ordenados de menor a mayor");
+document.write("<br>");
+num.sort(function(a, b){return a-b});
+for(var i = 0;i <= 4;i++){
+	document.write(num[i]);
+    document.write("<br>");
+}
+</script>
+</BODY>
+</HTML>
+

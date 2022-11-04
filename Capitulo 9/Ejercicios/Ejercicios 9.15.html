@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8">
+            <title>Ejercicios 9.15</title>
+            <script>
+                var numero;
+                numero=window.prompt("Ingresa un numero \n Ingresa una letra para salir");
+                numero=parseInt(numero);
+
+                if(numero%2==0){
+                    window.alert("Es Par");
+                }else if(isNaN(numero)==false){
+                    window.alert("Es Impar");
+                }
+
+                while(isNaN(numero)==false){
+                    numero=window.prompt("Ingresa un numero \n Ingresa una letra para salir");
+                    numero=parseInt(numero);
+
+                    if(numero%2==0){
+                        window.alert("Es Par");
+                    }else if(isNaN(numero)==false){
+                        window.alert("Es Impar");
+                    }
+                }
+
+                window.alert("Saliste del programa");
+
+            </script>
+        </head>
+        <body>
+            <a href="/Menu 6al9.html">Inicio</a>
+            <h4>Seseña Baez Brayan Elihu</h4>
+            <h4>197O00636</h4>
+            <hr>
+        </body>
+    </html>

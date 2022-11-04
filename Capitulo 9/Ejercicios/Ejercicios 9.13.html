@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ejercicios 9.13</title>
+
+        <script>
+            function escucha(){
+                var boton=document.getElementById("botonC");
+                boton.addEventListener("click",Potencia_Entera,false);
+            }
+
+            function Potencia_Entera(){
+                var num=document.getElementById("Base");
+                num=parseInt(num.value);
+                var expo=document.getElementById("Exp");
+                expo=parseInt(expo.value);
+
+                var resultado=Math.pow(num,expo);
+                var rText=document.getElementById("textRes");
+                rText.innerHTML=num+"^"+expo+" = "+resultado;
+            }
+
+            window.addEventListener("load",escucha,false);
+        </script>
+    </head>
+
+    <body>
+
+        <a href="/Menu 6al9.html">Inicio</a>
+        <h4>Seseña Baez Brayan Elihu</h4>
+        <h4>197O00636</h4>
+        <hr>
+        
+        <form action="#">
+            <p>
+                <label>Base: </label>
+                <input id="Base" type="number" placeholder="Numero">
+            </p>
+            <p>
+                <label>Exponente: </label>
+                <input id="Exp" type="number" placeholder="^x">
+            </p>
+            <input id="botonC" type="button" value="Calcular">
+        </form>
+        <p id="textRes">
+
+        </p>
+    </body>
+</html>

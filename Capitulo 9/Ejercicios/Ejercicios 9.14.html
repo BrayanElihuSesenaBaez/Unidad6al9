@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ejercicios 9.14</title>
+        <script>
+
+            function escucha(){
+                var boton=document.getElementById("botonC");
+                boton.addEventListener("click",Potencia_Entera,false);
+            }
+
+            function Potencia_Entera(){
+                var rText=document.getElementById("textRes");
+                var num=document.getElementById("Base");
+                num=parseFloat(num.value);
+                var expo=document.getElementById("Exp");
+                expo=parseFloat(expo.value);
+
+                var resultado;
+
+                if(num%expo == 0){
+                    resultado=true;
+                    rText.innerHTML="Verdadero";
+                }else{
+                    resultado=false;
+                    rText.innerHTML="Falso";
+                }
+                
+            }
+
+            window.addEventListener("load",escucha,false);
+        </script>
+    </head>
+
+    <body>
+
+        <a href="/Menu 6al9.html">Inicio</a>
+        <h4>Seseña Baez Brayan Elihu</h4>
+        <h4>197O00636</h4>
+        <hr>
+
+        <form>
+            <p>
+                <label>Numero1: </label>
+                <input id="Base" type="number" placeholder="Numero1">
+            </p>
+            <p>
+                <label>Numero2: </label>
+                <input id="Exp" type="number" placeholder="Numero2">
+            </p>
+            <input id="botonC" type="button" value="Calcular">
+        </form>
+        <p id="textRes">
+
+        </p>
+    </body>
+</html>

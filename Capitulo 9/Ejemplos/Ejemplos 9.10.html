@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>  
+<html> <head> <meta charset = "utf-8"> <title>Ejemplos 9.10</title> 
+    <style type = "text/css"> p { margin: 0px; } </style>
+    <body>
+        <a href="/Menu 6al9.html">Inicio</a>
+        <h4>Seseña Baez Brayan Elihu</h4>
+        <h4>197O00636</h4>
+        <hr>
+    </body>
+<script> 
+    var salida = ""; 
+    function calcularFactoriales() {
+    for ( var i = 0; i <= 10; ++i ) salida += "<p>" + i + "! = " + factorial( i ) + "</p>"; document.getElementById( "resultados" ).innerHTML = salida; 
+    }
+
+    function factorial( numero ) { if ( numero <= 1 ) return 1; else return numero * factorial( numero - 1 ); 
+    } 
+
+    window.addEventListener( "load", calcularFactoriales, false ); </script> </head> <body> <h1>Factoriales de 0 a 10</h1> <div id = "resultados"></div> </body> </html>

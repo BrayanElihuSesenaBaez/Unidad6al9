@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ejercicios 7.11</title>
+
+<body>
+	<a href="/Menu 6al9.html">Inicio</a>
+	<h4>Seseña Baez Brayan Elihu</h4>
+	<h4>197O00636</h4>
+	<hr>
+</body>
+<script type="text/javascript">
+	var kilometros_recorridos, no_kilometros, litros_recorridos, no_litros, miles_litros;
+	kilometros_recorridos=window.prompt("Ingrese cuántos kilometros conducio, (-1 para salir) ", "0");
+	no_kilometros=parseInt(kilometros_recorridos);
+	document.write("<table>");
+	document.write("<tr><th>Kilometros</th><th>Litros usados</th><th>Kilometros por litro</th></tr>");
+	while (no_kilometros !=-1) {
+		litros_recorridos=window.prompt("Por favor ingrese los litros usados en el viaje ", "0");
+		no_litros=parseInt(litros_recorridos);
+		miles_litros=no_kilometros/no_litros;
+		document.write("<tr><td>" + no_kilometros + "</td><td>" + no_litros + "</td><td>" + miles_litros + "</td></tr>");
+		kilometros_recorridos=window.prompt("Ingrese cuántos kilometros conducio, (-1 para salir) ", "0");
+		no_kilometros=parseInt(kilometros_recorridos);
+	}
+	document.write("</table>");
+	if (no_kilometros==-1)
+		window.alert("Gracias.");
+
+</script>
+</head>
+
+</html>

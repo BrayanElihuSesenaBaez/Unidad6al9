@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ejercicios 917</title>
+
+        <script>
+            function escucha(){
+                var boton1=document.getElementById("Boton");
+                boton1.addEventListener("click",C_a_F,false);
+                var boton2=document.getElementById("Boton2");
+                boton2.addEventListener("click",F_a_C,false);
+            }
+
+            function F_a_C(){
+                var numero=document.getElementById("Entrada")
+                numero=parseInt(numero.value);
+                var resultado;
+                resultado=5/9*(numero-32);
+                var res=document.getElementById("resultado");
+                res.innerHTML=numero+" Fahrenheit = "+resultado.toFixed(1)+" C°";
+            }
+
+            function C_a_F(){
+                var numero=document.getElementById("Entrada")
+                numero=parseInt(numero.value);
+                var resultado;
+                resultado=9/5*numero+32;
+                var res=document.getElementById("resultado");
+                res.innerHTML=numero+"C° = "+resultado.toFixed(1)+" Fahrenheit";
+            }
+
+            window.addEventListener("DOMContentLoaded",escucha,false);
+
+        </script>
+    </head>
+
+    <body>
+        <a href="/Menu 6al9.html">Inicio</a>
+        <h4>Seseña Baez Brayan Elihu</h4>
+        <h4>197O00636</h4>
+        <hr>
+
+        <form>
+            <p>
+                <label>Conversion: </label>
+                <input id="Entrada" type="number" placeholder="Ingresa una cantidad">
+            </p>
+            <p>
+                <input id="Boton" type="button" value="Converir a Fahrenheit">
+                <input id="Boton2" type="button" value="Convertir a Celsius">
+            </p>
+        </form>
+        <p id="resultado">
+
+        </p>
+    </body>
+</html>
